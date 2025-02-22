@@ -1,0 +1,94 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding: 10px 16px;
+}
+
+body {
+  margin: 30px 350px 0px 350px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.dark-mode {
+  background-color: rgb(19, 19, 19);
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  color: grey;
+}
+
+li a:hover {
+  color: #80c6ff;
+}
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 150px;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: grey;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #80c6ff;
+}
+
+.buttonDM {
+  border-radius: 50%;
+}
+
+.rainbow {
+  text-align: center;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+
+button {
+  border: none;
+  background: none;
+}
