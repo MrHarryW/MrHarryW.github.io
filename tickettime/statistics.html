@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ticket Time | MrHarryW</title>
+		<script src="../main.js"></script>
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+  <div class="sidenav">
+    <ul>
+      <li><a href=""><button><img src="../images/youtube.png" alt="YouTube" width="40px" height="40px"></button></a></li>
+      <li><a href="https://x.com/Mr_HarryW"><button><img src="../images/x.png" alt="X (Twitter)" width="40px" height="40px"></button></a></li>
+      <li><a href="https://github.com/MrHarryW"><button><img src="../images/github.png" alt="GitHub" width="40px" height="40px"></button></a></li>
+      <li><a href="https://discord.gg/CTxkymGKVa"><button><img src="../images/pidis.jpg" style="border-radius: 50%;" alt="PiDis" width="40px" height="40px"></button></a></li>
+    </ul>
+  </div>  
+
+  <body>
+    <div class="header" id="myHeader">
+      <ul>
+        <li><img style="border-radius: 60%;" src="../images/teslapfp.jpg" alt="Profile Picture" width="75px" height="75px"></li>
+        <li><a href=""> </a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../blogs.html">Blogs</a></li>
+        <li><a class="rainbow" href="../tickettime.html">Ticket Time</a></li>
+        <li style="float: right; margin-right: 10px; margin-top: 10px;"><button class="buttonDM" onclick="darkMode()"><img src="../images/lightbulb.png" alt="Toggle Dark Mode" width="40px" height="40px"></button></li>
+      </ul>
+    </div>
+    <div style="margin-left: 10%;">
+      <h1>Hello World, I'm <strong class="rainbow">Harry</strong>.</h1>
+      
+      <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load('current', {packages:['corechart']});
+        google.charts.setOnLoadCallback(drawCharts);
+        
+        function drawCharts() {
+            drawServerChart();
+            drawUserGrowthChart();
+            drawTicketUsageChart();
+        }
+        
+        function drawServerChart() {
+            const data = google.visualization.arrayToDataTable([
+                ['Month', 'Servers'],
+                [1,2],[2,16],[3,23],[4,21],[5,29]
+            ]);
+            const options = {
+                title: 'Number of Servers Since Release in October 2024',
+                hAxis: {title: 'Month'},
+                vAxis: {title: 'Number of Servers'},
+                legend: 'none'
+            };
+            const chart = new google.visualization.LineChart(document.getElementById('serversChart'));
+            chart.draw(data, options);
+        }
+        
+        function drawUserGrowthChart() {
+            const data = google.visualization.arrayToDataTable([
+                ['Month', 'Users'],
+                ['Oct 2024', 500], ['Nov 2024', 1200], ['Dec 2024', 2300], ['Jan 2025', 3500], ['Feb 2025', 4900]
+            ]);
+            const options = {
+                title: 'User Growth Over Time',
+                hAxis: {title: 'Month'},
+                vAxis: {title: 'Users'},
+                legend: 'none'
+            };
+            const chart = new google.visualization.LineChart(document.getElementById('userGrowthChart'));
+            chart.draw(data, options);
+        }
+        
+        function drawTicketUsageChart() {
+            const data = google.visualization.arrayToDataTable([
+                ['Month', 'Tickets Created'],
+                ['Oct 2024', 80], ['Nov 2024', 360], ['Dec 2024', 580], ['Jan 2025', 660], ['Feb 2025', 1000]
+            ]);
+            const options = {
+                title: 'Tickets Created Over Time',
+                hAxis: {title: 'Month'},
+                vAxis: {title: 'Tickets Created'},
+                legend: 'none'
+            };
+            const chart = new google.visualization.LineChart(document.getElementById('ticketUsageChart'));
+            chart.draw(data, options);
+        }
+    </script>
+    <p style="font-size: 20px;">Here you can find detailed statistics regarding the performance, growth, and usage of the Ticket Time bot.</p>
+    
+    <h2>Server Growth</h2>
+    <p style="font-size: 15px;">This chart represents the number of Discord servers using Ticket Time since its release.</p>
+    <div id="serversChart" class="chart-container" style="max-width:700px; height:400px"></div>
+    
+    <h2>User Growth</h2>
+    <p style="font-size: 15px;">The following graph tracks the growth of users who have interacted with Ticket Time.</p>
+    <div id="userGrowthChart" class="chart-container" style="max-width:700px; height:400px"></div>
+    
+    <h2>Ticket Usage</h2>
+    <p style="font-size: 15px;">This chart details the number of tickets created over time, showcasing how Ticket Time is used.</p>
+    <div id="ticketUsageChart" class="chart-container" style="max-width:700px; height:400px"></div>
+    
+    <h2>Conclusion</h2>
+    <p style="font-size: 15px;">Ticket Time has been growing rapidly, with increasing server adoption, user engagement, and ticket creation. We aim to keep improving the bot to serve the Discord community better.</p>
+    </div>
+
+    <div>
+      <p></p>
+    </div>
+
+  </body>
+</html>
