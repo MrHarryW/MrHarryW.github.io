@@ -1,0 +1,122 @@
+.header {
+  position: sticky;
+  top: 0;
+  padding: 10px 16px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  z-index: 10;
+}
+
+body {
+  margin: 1.5% 20% 0px 20%;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.dark-mode {
+  background-color: rgb(19, 19, 19);
+  color: white;
+
+  .header {
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    background-color: rgb(19, 19, 19);
+    border-radius: 20px;
+  }
+  
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  color: grey;
+}
+
+li a:hover {
+  color: #80c6ff;
+}
+
+.sidenav {
+  width: 7%;
+  position: fixed;
+  z-index: 1;
+  top: 15%;
+  left: 10%;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 5% 7% 5% 10%;
+  text-decoration: none;
+  font-size: 25px;
+  color: grey;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #80c6ff;
+}
+
+.buttonDM {
+  border-radius: 50%;
+}
+
+.rainbow {
+  text-align: center;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.blog {
+  color: #ffffff;
+  background-color: #6d6d6d;
+  width: 80%; 
+  height: 15%; 
+  border-color: black; 
+  border-style: dotted; 
+  border-radius: 20px;
+  text-align: left;
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 15%;
+  font-size: 15px;
+  margin: 1%;
+}
