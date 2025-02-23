@@ -11,6 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
 			rel="stylesheet"
 		/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
   <div class="sidenav">
@@ -35,11 +36,76 @@
     </div>
     <div style="margin-left: 10%;">
       <h1>It's <strong class="rainbow">Ticket Time</strong>.</h1>
+      <div class="slideshow-container">
+
+        <div class="mySlides">
+          <q>Essential!The Ticket Bot is an <strong>essential</strong> tool for Discord communities seeking a streamlined way to manage support and communication. Designed with both server members and staff in mind, this bot <strong>excels</strong> in creating a <strong>structured, organized,</strong> and <strong>user-friendly</strong> environment for handling inquiries, requests, and issues. </q>
+          <p class="author">- Toby CP, 11 December 2024</p>
+        </div>
+        
+        <div class="mySlides">
+          <q>Game Changer! Ticket Time has been a game-changer for us here at Wilmington Academy Esports. The ability to task <strong>manage issues</strong> was always an issue and often lost in chat. Ticket Time allowed us to streamline our service to the Esports Players, identifying issues and problems <strong>quickly</strong> and <strong>efficiently</strong>. This is a <strong>must</strong> tool for any server. </q>
+          <p class="author">- Wilmington Academy Esports, 12 December 2024</p>
+        </div>
+        
+        <div class="mySlides">
+          <q>Easy To Use! Ticket Time is <strong>really easy</strong> to set up with only a handful of <strong>easy commands</strong> to run to complete the set up. If the bot has any issues the owner/developer is there to fix them <strong>as soon as possible</strong>. I like that fact that I can <strong>blacklist users</strong> from using the bot so I don't have to deal with the annoyance of someone spamming tickets. Overall, <strong>great bot</strong> and I would recommend to everyone. </q>
+          <p class="author">- Burger, 12 December 2024.</p>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
       
-      <a href="tickettime/statistics.html"><button class="blog"><h2>Statistics</h2><strong>Explore key insights into Ticket Time’s usage with detailed graphs and data. See ticket volumes, response times, and peak support hours, all in one place. Gain a clear view of how Ticket Time enhances server support!</strong></button></a>
-      <a href="tickettime/documentation.html"><button class="blog"><h2>Documentation</h2><strong>Find everything you need to set up and manage Ticket Time with ease. Our documentation covers commands, features, and customization options to help you get the most out of your support system.</strong></button></a>
-      <a href="tickettime/privacypolicy.html"><button class="blog"><h2>Privacy Policy</h2><strong>Your privacy is our priority. This page explains how we handle data, ensuring transparency and security for all users. We collect only what's necessary to provide a seamless support experience.</strong></button></a>
-      <a href="tickettime/termsandconditions.html"><button class="blog"><h2>Terms and Conditions</h2><strong>By using Ticket Time, you agree to our guidelines for fair and proper use. This page outlines your rights, responsibilities, and the terms of service to ensure a smooth experience for all users.</strong></button></a>
+      <a href="tickettime/statistics.html"><button class="blog"><h2>Statistics</h2><strong>Explore key insights into Ticket Time’s usage with detailed graphs and data. See ticket volumes, response times, and peak support hours, all in one place. Gain a clear view of how Ticket Time enhances server support!</strong><p style="text-align: right; padding-right: 10px; color: blue;">Click to find out more!</p></button></a>
+      <a href="tickettime/documentation.html"><button class="blog"><h2>Documentation</h2><strong>Find everything you need to set up and manage Ticket Time with ease. Our documentation covers commands, features, and customization options to help you get the most out of your support system.</strong><p style="text-align: right; padding-right: 10px; color: blue;">Click to find out more!</p></button></a>
+      <a href="tickettime/privacypolicy.html"><button class="blog"><h2>Privacy Policy</h2><strong>Your privacy is our priority. This page explains how we handle data, ensuring transparency and security for all users. We collect only what's necessary to provide a seamless support experience.</strong><p style="text-align: right; padding-right: 10px; color: blue;">Click to find out more!</p></button></a>
+      <a href="tickettime/termsandconditions.html"><button class="blog"><h2>Terms and Conditions</h2><strong>By using Ticket Time, you agree to our guidelines for fair and proper use. This page outlines your rights, responsibilities, and the terms of service to ensure a smooth experience for all users.</strong><p style="text-align: right; padding-right: 10px; color: blue;">Click to find out more!</p></button></a>
+    </div>
+
+    <div>
+      <br>
+    </div>
+    <div class="footer" style="text-align: center;">
+      <p>&copy; 2024 MrHarryW. All rights reserved.</p>
+      <p>Visit my <a href="https://github.com/MrHarryW" target="_blank" style="color: #007bff;">GitHub</a> | <a href="https://x.com/Mr_HarryW" target="_blank" style="color: #007bff;">Twitter</a></p>
     </div>
 
   </body>
