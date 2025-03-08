@@ -1,109 +1,131 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ticket Time | MrHarryW</title>
-		<script src="../main.js"></script>
-		<link rel="stylesheet" href="../style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
-			rel="stylesheet"
-		/>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/boxes.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
+    <title>MrHarryW</title>
+  </head>
+    <body>
+      <div id="headerDIV">
+        <header>
+          <div id="brand"><a href="/">MrHarryW</a></div>
+          <nav>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/headerPages/about.html">About</a></li>
+              <li><a href="/headerPages/tickettime.html">Ticket Time</a></li>
+              <li><a href="/headerPages/posts.html">Posts</a></li>
+              <li><a href="/headerPages/partnerships.html">Partnerships</a></li>
+              <li><a href="/headerPages/wilmae2024.html">WILMAE2024</a></li>
+              <li><a href="/headerPages/opensource.html">OS{8.3.25}</a></li>
+              <li id="login"><a href="/login">Login</a></li>
+              <li id="signup"><a href="/signup">SignUp</a></li>
+            </ul>
+          </nav>
+          <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/headerPages/about.html">About</a></li>
+              <li><a href="/headerPages/tickettime.html">Ticket Time</a></li>
+              <li><a href="/headerPages/posts.html">Posts</a></li>
+              <li><a href="/headerPages/partnerships.html">Partnerships</a></li>
+              <li><a href="/headerPages/wilmae2024.html">WILMAE2024</a></li>
+              <li><a href="/headerPages/opensource.html">OS{8.3.25}</a></li>
+            </ul>
+            <ul class="mobile-menu" style="top: 250px;">
+              <li id="login" style=" margin-top: 10px;"><a href="/login">Login</a></li>
+              <li id="signup" style=" margin-top: 10px;"><a href="/signup">SignUp</a></li>
+            </ul>
+          </div>
+        </header>
+      </div>
+      <div id="mainDiv">
+        <div id="sectionTitle">MrHarryW – Ticket Time - Documentation</div>
+        <br>
+        <h2>1. Supported Languages</h2>
+        <br>
+        <ul style="display: block; text-align: center;">
+            <li style="font-size: 15px;">English</li><br>
+            <li style="font-size: 15px;">Spanish</li><br>
+            <li style="font-size: 15px;">French</li><br>
+            <li style="font-size: 15px;">Arabic</li><br>
+            <li style="font-size: 15px;">German</li><br>
+            <li style="font-size: 15px;">Mandarin (Coming Soon)</li><br>
+        </ul>
+        <br>
+        <br>
+        <h2>2. Commands and Usage</h2>
+        <br>
+        <ul style="display: block; text-align: center;">
+          <li><h3 style="font-size: 25px;">/add</h3>
+        <p style="font-size: 15px;">Add a user to the ticket.</p></li>
+        <br>
+        <li><h3 style="font-size: 25px;">/blacklistedrole</h3>
+        <p style="font-size: 15px;">Set up the ticket blacklisted role. <strong>ENGLISH SUPPORT ONLY</strong></p></li>
+        <br>
+        <li><h3 style="font-size: 25px;">/close</h3>
+        <p style="font-size: 15px;">Closes the ticket.</p></li>
+        <br>
+        <li><h3 style="font-size: 25px;">/help</h3>
+        <p style="font-size: 15px;">Provides information on setup and other bot features. <strong>ENGLISH SUPPORT ONLY</strong></p></li>
+        <br>
+        <li><h3 style="font-size: 25px;">/id</h3>
+        <p style="font-size: 15px;">Responds with the ID of the provided object.</p></li>
+        <br>
+        <li><h3 style="font-size: 25px;">/invite</h3>
+        <p style="font-size: 15px;">Provides an invite link for Ticket Time.</p></li>
+        <br>
+        <li><h3 style="font-size: 25px;">/remove [user]</h3>
+        <p style="font-size: 15px;">Removes a user from the ticket.</p></li>
+        <br>
+        <li><h3 style="font-size: 25px;">/setup</h3>
+        <p style="font-size: 15px;">Set up a language by creating all roles, channels and messages in one command! <strong>ALL LANGUAGES</strong></p></li>
+        <br>
+        <li><h3 style="font-size: 25px;">/ticket</h3>
+        <p style="font-size: 15px;">Launches the ticketing system. <strong>ENGLISH SUPPORT ONLY</strong></p></li>
+        <br>
+        <li><h3 style="font-size: 25px;">/ticketcat</h3>
+        <p style="font-size: 15px;">Set up the ticket channel categories. <strong>ENGLISH SUPPORT ONLY</strong></p></li>
+        <br>
+        <li><h3 style="font-size: 25px;">/ticketlogs</h3>
+        <p style="font-size: 15px;">Set up the ticket log category. <strong>ENGLISH SUPPORT ONLY</strong></p></li>
+        <br>
+        <li><h3 style="font-size: 25px;">/ticketteam</h3>
+        <p style="font-size: 15px;">Set up the ticket moderation team role. <strong>ENGLISH SUPPORT ONLY</strong></p></li>
+        </ul>
+        <br>
+        <br>
+        <h2>3. Additional Information</h2>
+        <br>
+        <p style="font-size: 15px;">Ticket Time is a Discord bot designed to efficiently manage support tickets. It is regularly updated with new features and improvements. All commands tagged: <strong>ENGLISH SUPPORT ONLY</strong> are support with the /setup command in all offered languages.</p>
+        <br>
+        <br>
+          <br>
+        </div>
+        <br>
+        <br>
+      </div>
 
-  <div class="sidenav">
-    <ul>
-      <li><a href=""><button><img src="../images/youtube.png" alt="YouTube" width="40px" height="40px"></button></a></li>
-      <li><a href="https://x.com/Mr_HarryW"><button><img src="../images/x.png" alt="X (Twitter)" width="40px" height="40px"></button></a></li>
-      <li><a href="https://github.com/MrHarryW"><button><img src="../images/github.png" alt="GitHub" width="40px" height="40px"></button></a></li>
-      <li><a href="https://discord.gg/NexN63Esyw"><button><img src="../images/semi-colon.png" style="border-radius: 50%;" alt="semi-colon" width="40px" height="40px"></button></a></li>
-    </ul>
-  </div>  
-
-  <body>
-    <div class="header" id="myHeader">
-      <ul>
-        <li><img style="border-radius: 60%;" src="../images/teslapfp.jpg" alt="Profile Picture" width="75px" height="75px"></li>
-        <li><a href=""> </a></li>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../blogs.html">Blogs</a></li>
-        <li><a class="rainbow" href="../tickettime.html">Ticket Time</a></li>
-        <li style="float: right; margin-right: 10px; margin-top: 10px;"><button class="buttonDM" onclick="darkMode()"><img src="../images/lightbulb.png" alt="Toggle Dark Mode" width="40px" height="40px"></button></li>
-      </ul>
-    </div>
-    <div style="margin-left: 100px;">
-      <h1>Ticket Time <strong class="rainbow">Documentation</strong>.</h1>
-      <p style="font-size: 15px;"><em>Last Updated: <strong>23rd February 2025</em></strong></em></p>
-      
-      <h2>1. Supported Languages</h2>
-    <ul>
-        <li style="font-size: 15px;">English</li><br>
-        <li style="font-size: 15px;">Spanish</li><br>
-        <li style="font-size: 15px;">French</li><br>
-        <li style="font-size: 15px;">Arabic</li><br>
-        <li style="font-size: 15px;">German</li><br>
-        <li style="font-size: 15px;">Mandarin (Coming Soon)</li><br>
-    </ul>
-    
-    <h2>2. Commands and Usage</h2>
-    
-    <h3 style="font-size: 25px;">/add</h3>
-    <p style="font-size: 15px;">Add a user to the ticket.</p>
-    
-    <h3 style="font-size: 25px;">/blacklistedrole</h3>
-    <p style="font-size: 15px;">Set up the ticket blacklisted role. <strong>ENGLISH SUPPORT ONLY</strong></p>
-    
-    <h3 style="font-size: 25px;">/close</h3>
-    <p style="font-size: 15px;">Closes the ticket.</p>
-    
-    <h3 style="font-size: 25px;">/help</h3>
-    <p style="font-size: 15px;">Provides information on setup and other bot features. <strong>ENGLISH SUPPORT ONLY</strong></p>
-    
-    <h3 style="font-size: 25px;">/id</h3>
-    <p style="font-size: 15px;">Responds with the ID of the provided object.</p>
-    
-    <h3 style="font-size: 25px;">/invite</h3>
-    <p style="font-size: 15px;">Provides an invite link for Ticket Time.</p>
-    
-    <h3 style="font-size: 25px;">/remove [user]</h3>
-    <p style="font-size: 15px;">Removes a user from the ticket.</p>
-    
-    <h3 style="font-size: 25px;">/setup</h3>
-    <p style="font-size: 15px;">Set up a language by creating all roles, channels and messages in one command! <strong>ALL LANGUAGES</strong></p>
-    
-    <h3 style="font-size: 25px;">/ticket</h3>
-    <p style="font-size: 15px;">Launches the ticketing system. <strong>ENGLISH SUPPORT ONLY</strong></p>
-    
-    <h3 style="font-size: 25px;">/ticketcat</h3>
-    <p style="font-size: 15px;">Set up the ticket channel categories. <strong>ENGLISH SUPPORT ONLY</strong></p>
-    
-    <h3 style="font-size: 25px;">/ticketlogs</h3>
-    <p style="font-size: 15px;">Set up the ticket log category. <strong>ENGLISH SUPPORT ONLY</strong></p>
-    
-    <h3 style="font-size: 25px;">/ticketteam</h3>
-    <p style="font-size: 15px;">Set up the ticket moderation team role. <strong>ENGLISH SUPPORT ONLY</strong></p>
-    
-    <h2>3. Additional Information</h2>
-    <p style="font-size: 15px;">Ticket Time is a Discord bot designed to efficiently manage support tickets. It is regularly updated with new features and improvements. All commands tagged: <strong>ENGLISH SUPPORT ONLY</strong> are support with the /setup command in all offered languages.</p>
-    
-    <h2>4. Contact & Support</h2>
-      <p style="font-size: 17px;">If you have any questions or concerns about this Privacy Policy, please reach out to:</p>
-      <ul>
-          <li style="font-size: 17px;"><strong>Bot Developer Contact:</strong><a href="https://discord.gg/arRu9Buw8S">Ticket Time Discord Server or through PiDis or socials in the sidebar.</a></li>
-      </ul>
-    </div>
-
-    <div>
       <br>
-    </div>
+      <br>
+      <br>
+      <br>
 
-    <div class="footer" style="text-align: center;">
-      <p>&copy; 2024 MrHarryW. All rights reserved.</p>
-      <p>Visit my <a href="https://github.com/MrHarryW" target="_blank" style="color: #007bff;">GitHub</a> | <a href="https://x.com/Mr_HarryW" target="_blank" style="color: #007bff;">Twitter</a></p>
-    </div>
+      <footer>
+        <div id="brand"><a href="/">MrHarryW</a></div>
+        <nav>
+          <ul>
+            <li>&copy; 2024 MrHarryW. All rights reserved.</li>
+          </ul>
+        </nav>
+      </footer>
 
-  </body>
+      <script src="main.js"></script>
+    </body>
 </html>
