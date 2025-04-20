@@ -1,0 +1,254 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header, footer {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  padding: 2em;
+  min-height: 70vh;
+}
+
+footer .socials a {
+  margin: 0 0.5em;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Light Theme */
+.theme-light {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f0f0f0;
+  --text-primary: #000000;
+
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Dark Theme */
+.theme-dark {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-primary: #f0f0f0;
+
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Solarized Theme */
+.theme-solarized {
+  --bg-primary: #fdf6e3;
+  --bg-secondary: #eee8d5;
+  --text-primary: #657b83;
+
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+
+/* Project Gallery Styles */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--bg-primary);
+}
+
+.project-card {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-card .project-info {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: var(--text-primary);
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+  background-color: var(--bg-primary);
+}
+
+.project-card .tags {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.project-card .tags span {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .project-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Badge Styles */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.badge-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.badge-primary:hover {
+  background-color: #0056b3;
+}
+
+.badge-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.badge-secondary:hover {
+  background-color: #5a6268;
+}
+
+.badge-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.badge-success:hover {
+  background-color: #218838;
+}
+
+.badge-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.badge-danger:hover {
+  background-color: #c82333;
+}
+
+.badge-warning {
+  background-color: #ffc107;
+  color: black;
+}
+
+.badge-warning:hover {
+  background-color: #e0a800;
+}
+
+.badge-info {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.badge-info:hover {
+  background-color: #138496;
+}
+
+.badge-light {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.badge-light:hover {
+  background-color: #e2e6ea;
+}
+
+.badge-dark {
+  background-color: #343a40;
+  color: white;
+}
+
+.badge-dark:hover {
+  background-color: #23272b;
+}
+
+/* Usage in Project Cards */
+.project-card .badge {
+  margin-top: 0.8rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 0.85rem;
+}

@@ -1,94 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/boxes.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MrHarryW</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2784181716656794"
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MrHarryW | Portfolio</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <script src="./scripts/theme.js" defer></script>
+  <script src="./scripts/router.js" defer></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2784181716656794"
      crossorigin="anonymous"></script>
-  </head>
-    <body>
-      <div id="headerDIV">
-      <header>
-        <div id="brand"><a href="/">MrHarryW</a></div>
-        <nav>
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/headerPages/about.html">About</a></li>
-            <li><a href="/headerPages/tickettime.html">Ticket Time</a></li>
-            <li><a href="/headerPages/posts.html">Posts</a></li>
-            <li><a href="/headerPages/partnerships.html">Partnerships</a></li>
-            <li><a href="/headerPages/wilmae2024.html">WILMAE2024</a></li>
-            <li><a href="/headerPages/opensource.html">OS{8.3.25}</a></li>
-            <li id="login"><a href="/login">Login</a></li>
-            <li id="signup"><a href="/signup">SignUp</a></li>
-          </ul>
-        </nav>
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-          <ul class="mobile-menu">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/headerPages/about.html">About</a></li>
-            <li><a href="/headerPages/tickettime.html">Ticket Time</a></li>
-            <li><a href="/headerPages/posts.html">Posts</a></li>
-            <li><a href="/headerPages/partnerships.html">Partnerships</a></li>
-            <li><a href="/headerPages/wilmae2024.html">WILMAE2024</a></li>
-            <li><a href="/headerPages/opensource.html">OS{8.3.25}</a></li>
-          </ul>
-          <ul class="mobile-menu" style="top: 250px;">
-            <li id="login" style=" margin-top: 10px;"><a href="/login">Login</a></li>
-            <li id="signup" style=" margin-top: 10px;"><a href="/signup">SignUp</a></li>
-          </ul>
-        </div>
-      </header>
-      </div>
-      <div id="mainDiv">
-        <div id="sectionTitle">MrHarryW – Developer, Innovator, and Digital Creator</div>
-        <br>
-        <p>I’m a passionate and innovative developer with a strong background in coding and software development. I love creating engaging digital experiences and have developed a variety of projects, from Discord bots to web applications. I primarily code in <strong>Python, HTML, and JavaScript</strong>, using these languages to build tools that enhance user interactions.</p>
-        <br>
-        <br>
-        <div id="sectionTitle">Discord Bot Development</div>
-        <br>
-          <ul class="boxUL">
-            <li id="box1"><p id="boxTitle">Ticket Time</p><p id="boxText"><a href="/headerPages/tickettime.html">A multilingual Discord ticket bot available in English, Spanish, French, Arabic, and German, with support for more languages like Russian and Mandarin coming soon. Ticket Time helps server administrators manage user queries efficiently.</p></a></li>
-            <li id="box2"><p id="boxTitle">Watch;Dog</p><p id="boxText" style="font-size: 0.8em;">The steward of "; semi-colon", my developer-focused Discord community. Watch;Dog ensures moderation, upholds order, and facilitates the dissemination of essential information. The bot is open-source, and its source code is available on my website for anyone interested in learning from or contributing to it.</p></li>
-          </ul>
-          <ul class="boxUL">
-            <li id="box3"><p id="boxTitle">Text To Binary</p><p id="boxText">This Discord bot allows users to seamlessly convert text to binary and vice versa directly within a Discord server. Whether you’re experimenting with binary encoding or just having fun with secret messages, this bot makes it quick and easy!</p></li>
-            <li id="box4"><p id="boxTitle">More Coming Soon</p><p id="boxText">I do other things but nothing that warrants it's own box yet...</p></li>
-            </ul>
-        <br>
-        <br>
-        <div id="sectionTitle">Developer Community & Custom Discord Bots</div>
-        <br>
-        <p>I run a growing Discord server for developers called "; semi-colon", where people from different backgrounds—coding, 3D modeling, and other digital fields—come together to collaborate and share their work. At the heart of this community is Watch;Dog, a custom bot I developed. Watch;Dog serves as the steward of "; semi-colon", ensuring moderation, upholding order, and facilitating the dissemination of essential information. The source code for Watch;Dog is open-source and available on my website for anyone interested in learning from or contributing to it.</p>
-        <br>
-        <br>
-        <div id="sectionTitle">Looking Ahead</div>
-        <p>I’m always looking for new opportunities to expand my skills, create exciting projects, and improve the digital experience for others. Whether it’s through coding, community building, or software development, I strive to make a meaningful impact.</p>
-        
-      </div>
+</head>
+<body class="theme-light">
+  <header>
+    <nav>
+      <h1>MrHarryW</h1>
+      <ul>
+        <li><a href="/" data-link>Home</a></li>
+        <li><a href="/about" data-link>About</a></li>
+        <li><a href="/projects" data-link>Projects</a></li>
+        <li><a href="/contact" data-link>Contact</a></li>
+        <li><a href="/assets/YourName_CV.pdf" target="_blank">CV</a></li>
+        <li>
+          <select id="theme-switcher">
+            <option value="theme-light">Light</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-solarized">Solarized</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-      <br>
-      <br>
-      <br>
-      <br>
+  <main id="content">
+    <!-- This gets filled dynamically -->
+  </main>
 
-      <footer>
-        <div id="brand"><a href="/">MrHarryW</a></div>
-        <nav>
-          <ul>
-            <li>&copy; 2024 MrHarryW. All rights reserved.</li>
-          </ul>
-        </nav>
-      </footer>
-
-      <script src="main.js"></script>
-    </body>
+  <footer>
+    <p>&copy; 2024 MrHarryW. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://github.com/MrHarryW" target="_blank">GitHub</a> |
+      <a href="https://x.com/Mr_HarryW" target="_blank">Twitter</a>
+    </div>
+  </footer>
+</body>
 </html>
