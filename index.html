@@ -1,46 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MrHarryW | Portfolio</title>
-  <link rel="stylesheet" href="./styles/main.css" />
-  <script src="./scripts/theme.js" defer></script>
-  <script src="./scripts/router.js" defer></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2784181716656794"
-     crossorigin="anonymous"></script>
-</head>
-<body class="theme-light">
-  <header>
-    <nav>
-      <h1>MrHarryW</h1>
-      <ul>
-        <li><a href="/" data-link>Home</a></li>
-        <li><a href="/about" data-link>About</a></li>
-        <li><a href="/projects" data-link>Projects</a></li>
-        <li><a href="/contact" data-link>Contact</a></li>
-        <li><a href="/assets/YourName_CV.pdf" target="_blank">CV</a></li>
-        <li>
-          <select id="theme-switcher">
-            <option value="theme-light">Light</option>
-            <option value="theme-dark">Dark</option>
-            <option value="theme-solarized">Solarized</option>
-          </select>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MrHarryW</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <script src="./assets/js/githubapi.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="main">
+            <div class="n-ls" style="position: relative; display: flex; justify-content: center; align-items: center;">
+                <img src="images/n-ls.png" alt="Nature" class="n-lsimage" />
+                <h1 class="n-ls" id="t-text">About Me</h1>
+                <h1 class="n-ls" id="b-text">Hello World, I'm Harry 👋</h1>
+                <h1 class="n-ls" id="m-text">British developer with a passion for clean code, creative solutions, and community building.<br>Focused on Python, web development, and Discord integrations.</h1>
+            </div>  
+        </div>
 
-  <main id="content">
-    <!-- This gets filled dynamically -->
-  </main>
 
-  <footer>
-    <p>&copy; 2024 MrHarryW. All rights reserved.</p>
-    <div class="socials">
-      <a href="https://github.com/MrHarryW" target="_blank">GitHub</a> |
-      <a href="https://x.com/Mr_HarryW" target="_blank">Twitter</a>
-    </div>
-  </footer>
-</body>
+        <div class="main">
+            <div class="stats">
+                <a id="githubstars" href="https://github.com/MrHarryW">75+ Stars</a>
+                <a id="githubcommits" href="https://github.com/MrHarryW">400+ Commits</a>
+                <a id="githubrepos" href="https://github.com/MrHarryW">20+ Repositories</a>
+                <a id="githubfollowers" href="https://x.com/Mr_HarryW">1400+ Followers</a>
+            </div>
+        </div>
+
+
+        <div class="main">
+            <br>
+            <div class="c">
+            <div id="lc">
+                <div id="ads-message">
+                    <p>... Hi, ads help me to pay for this website and for my projects. If you would like to use an ad blocker please do, but if you would like to support me for free please leave the ads on :)</p>
+                </div>
+                <h1>More... About Me</h1>
+                <div id="talk">
+                <p>I have been coding for over 5 years, the start of my journey was lockdown 2020. Initially, I learned lua and built small Roblox Games.</p>
+                <p>I went on to develop on and off on roblox until around mid-2023 when I followed a tutorial to make my first Python Project. I quite frankly enjoyed it, but didn't continue with it just yet... </p>
+                <p>In late 2023 until early 2024, I was back making simple roblox games for my friends and family to enjoy.</p>
+                <p>In mid-2024 I started my first official project: Ticket Time, a simple Ticket Bot for discord that didn't store your data, and was free to use. Ticket Time was a great experience and still is, as I am now developing it with multiple developers and expanding it's reach into other languages.</p>
+                <p>In late 2024, I started to learn JavaScript and HTML/CSS, and I am now working on a website for my projects.</p>
+                <p>In early 2025, I have continued to expand my knowledge of Python, JavaScript, and HTML/CSS.</p>
+                </div>
+            </div>
+            <div id="sponsordivcontainer">
+                <div id="sponsordiv"  style="background-color: rgb(144, 151, 255); color: white;"> <!--class="dog-image"-->
+                    <!--<h2>The dog...</h1>
+                    <img src="images/public/1.png" alt="Dog" id="randomImage" />-->
+                    <h1>Coming Soon</h1>
+                    <p>What should I add here?</p>
+                    <p>Let me know your ideas :)</p>
+                </div>
+                <div id="sponsordiv" ><a href="https://www.wwf.org.uk/" style="text-decoration: none; color: rgb(144, 151, 255);">
+                    <h1>Donate to Charity</h1>
+                    <p>Please, if you can, donate to WWF to help the animals in need and to help save our planet.</p>
+                    Click me!
+                </a></div>
+            </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <section class="tech-section">
+                <h2>Technologies I use<span>.</span></h2>
+                <p class="harry-yapping">
+                  Over the years, I have worked with a variety of technologies.
+                  Here are some of the technologies I have experience with:
+                </p>
+                <div class="tech-grid">
+                  <span class="badge python">Python</span>
+                  <span class="badge orange">HTML</span>
+                  <span class="badge css">CSS</span>
+                  <span class="badge vue">Vue</span>
+                  <span class="badge daisyui">Daisy UI</span>
+                  <span class="badge tailwindcss">TailwindCSS</span>
+                  <span class="badge yellow">JavaScript</span>
+                  <span class="badge orange">PNPM</span>
+                  <span class="badge red-dark">Git</span>
+                  <span class="badge gray">GitHub</span>
+                  <span class="badge discord">Discord.py-self</span>
+                  <span class="badge heidisql">HeidiSQL</span>
+                  <span class="badge discord">Discord.py</span>
+                </div>
+                <p class="and-more">... and many more!</p>
+              </section>
+        </div>
+        
+
+        <div class="main">
+            <section class="projects">
+                <h2>My Projects<span>.</span></h2>
+                <p class="harry-yapping">
+                  I have worked on a variety of projects, both personal and professional.
+                  Here are some of the projects I have worked on:
+                </p>
+                <div class="project-card">
+                    <h3>Qwertry | The Anonymous Discord Chat Bot</h3>
+                    <p id="project-description">May 2025 - Present Day</p>
+                    <p id="project-description">Qwerty is a Python-based anonymous messaging system built on top of discord.py. Designed for privacy-focused interactions, Qwerty enables users to send anonymous messages within Discord DMs, while incorporating a robust moderation system with reporting, timeouts, and user validation. It's modular and event-driven, laying the foundation for future features such as anonymous replies and message threading.</p>
+                    <p id="project-description">Built with extensibility in mind, Qwerty is ideal for communities that value user expression while maintaining safety and accountability — and it's structured to support future integrations like web-based dashboards or logging systems.</p>
+                    <a href="https://discord.gg/Cu9AxfyGM7" target="_blank"><img src="images/projects/qwerty.png" alt="Qwerty" class="project-image" /></a>
+                </div>
+                <div class="project-card">
+                    <h3>Launchpad</h3>
+                    <p id="project-description">April 2025 - Present Day</p>
+                    <p id="project-description">Launchpad is a python framework built around discord.py that enables you to easily create a modular discord bot along with an API, which should make it easier to introduce a web dashboard later on.</p>
+                    <p id="project-description">We created this framework, because we often duplicated "loader" code across our discord bot projects, and it has become an endeavour to maintain them all.</p>
+                    <a href="https://github.com/launchpadfw" target="_blank"><img src="images/projects/launchpad.png" alt="Launchpad" class="project-image" /></a>
+                </div>
+                <div class="project-card">
+                    <h3>Ticket Time</h3>
+                    <p id="project-description">October 2024 - Present Day</p>
+                    <p id="project-description">Ticket Time is a multilingual Discord bot that helps servers manage support tickets efficiently with simple, easy to use commands.</p>
+                    <p id="project-description">I created Ticket Time to make it easier for communities to handle support requests in a professional, organized, and user-friendly way—no coding required.</p>
+                    <img src="images/projects/tickettime.png" alt="Ticket Time" class="project-image" />
+                </div>
+                <p class="and-more">... and many more!</p>   
+            </section>
+        </div>
+
+        <div class="footer">
+            <p>Made with ❤️ by <a href="https://github.com/MrHarryW">MrHarryW</a></p>
+        </div>
+        
+    </body>
 </html>
