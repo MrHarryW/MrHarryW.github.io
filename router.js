@@ -1,5 +1,5 @@
 const routes = {
-  '/': '/pages/home.html',
+  '/': '/index.html',
 };
 
 const app = document.getElementById('app');
