@@ -4,11 +4,8 @@
   <meta charset="utf-8">
   <title>Redirecting…</title>
   <script>
-    // Preserve requested path and move it into the hash, so client-side routing can handle it.
     var path = location.pathname + location.search + location.hash;
-    // If your site is hosted at a path like /repo-name/, adjust `base` if needed.
-    var base = '/'; // change this to '/repo-name/' if your site is at https://username.github.io/repo-name/
-    // Redirect to root with the original path in the hash
+    var base = '/';
     location.replace(base + '#'+ encodeURIComponent(path));
   </script>
 </head>
