@@ -5,22 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MrHarryW</title>
 
-    <link rel="stylesheet" href="./assets/css/home.css" />
-
-    <link rel="icon" type="image/png" href="./assets/images/favicon.png" sizes="32x32" />
-
-    <!-- Open Graph Meta Tags (used by Discord) -->
-    <meta property="og:title" content="MrHarryW" />
-    <meta
-      property="og:description"
-      content="The personal portfolio for MrHarryW | Building tools that help communities, support creators, and push boundaries."
-    />
-    <meta
-      property="og:image"
-      content="https://mrharryw.dev/assets/images/homepagess.png"
-    />
-    <meta property="og:url" content="https://mrharryw.dev/" />
-    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./home.css" />
+    <!-- <link rel="icon" type="image.png" href="./assets/images/favicon.png" sizes="32x32" /> -->
   </head>
   <body>
     <button id="toggleBtn" aria-label="Toggle sidebar">
@@ -32,21 +18,18 @@
     <div id="sidebar" aria-hidden="true">
       <h1>MrHarryW</h1>
       <nav class="sidebar-nav">
-        <a href="/">Home</a>
-        <a href="https://about.mrharryw.dev/">About</a>
-        <a href="https://work.mrharryw.dev/">Work</a>
-        <a href="https://blog.mrharryw.dev/">Blog</a>
-        <a href="https://temphobbies.vercel.app">Hobbies</a>
-        <a href="https://guestbook.mrharryw.dev/">Guestbook</a>
-        <a href="https://contact.mrharryw.dev/">Contact</a>
+        <a href="/" data-route="/">Home</a>
+        <a href="/projects" data-route="/projects">Projects</a>
+        <a href="/dashboard" data-route="/dashboard">Protected Dashboard</a>
+        <a href="/dashboard/results" data-route="/dashboard/results">My Predicted Grades</a>
       </nav>
     </div>
 
     <div id="hero"></div>
     <div class="content">
       <h1>
-        Building tools that help communities,<br />support creators, and
-        <em>push boundaries</em>.
+        My personal site for showcasing projects<br />hobbies, and
+        <em>information for applications.</em>.
       </h1>
     </div>
 
@@ -137,3 +120,4 @@
   </body>
 
 </html>
+
