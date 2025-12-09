@@ -1,12 +1,12 @@
 // Updated routes
 const routes = {
-    '/': 'main/home.html',
+    '/': './main/home.html',
     '/projects': 'main/projects.html',
     
     // Protected routes
-    '/dashboard': 'protected/dashboard/index.html',
-    '/dashboard/results': 'protected/dashboard/results.html',
-    '/dashboard/manage': 'protected/dashboard/manage/index.html'
+    '/dashboard': './protected/dashboard/index.html',
+    '/dashboard/results': './protected/dashboard/results.html',
+    '/dashboard/manage': './protected/dashboard/manage/index.html'
 };
 
 // List of protected paths (anything starting with /dashboard requires login)
